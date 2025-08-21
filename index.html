@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Affaq - Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Passionate Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating intuitive user interfaces and complete solutions."
+    />
+    <meta property="og:title" content="Mohammed Affaq - Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Passionate Full Stack Developer specializing in React, Node.js, and modern web technologies."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="#home" class="logo">MA</a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 1rem">
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Mohammed Affaq</h1>
+            <h2>Full Stack Developer</h2>
+            <p>
+              Passionate full stack developer with hands-on experience building
+              responsive web applications using React, JavaScript and modern
+              development tools. I specialize in creating intuitive user
+              interfaces while leveraging full-stack knowledge to deliver
+              complete solutions.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-envelope"></i>
+                Get In Touch
+              </a>
+              <a href="#" class="btn btn-secondary" onclick="downloadResume()">
+                <i class="fas fa-download"></i>
+                Download Resume
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-card">
+              <div class="profile-avatar">MA</div>
+              <h3>Full Stack Developer</h3>
+              <p>React • Node.js • MongoDB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>About Me</h2>
+          <p>Get to know more about my background and expertise</p>
+        </div>
+        <div class="fade-in">
+          <div class="experience-card">
+            <h3>Professional Summary</h3>
+            <p>
+              Passionate full stack developer with hands-on experience building
+              responsive web applications using React, JavaScript and modern
+              development tools. I specialize in creating intuitive user
+              interfaces while leveraging full-stack knowledge to deliver
+              complete solutions.
+            </p>
+            <br />
+            <p>
+              With a strong foundation in both frontend and backend
+              technologies, I bring a comprehensive approach to web development.
+              My experience includes working with modern frameworks,
+              implementing RESTful APIs and collaborating with cross-functional
+              teams to deliver high-quality projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Technical Skills</h2>
+          <p>Technologies and tools I work with</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                JavaScript (ES6+)
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-java"></i>
+                Java
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                SQL
+              </div>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                React
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                HTML5
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                CSS3
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-bootstrap"></i>
+                Bootstrap
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-wind"></i>
+                Tailwind CSS
+              </div>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                Node.js
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-express"></i>
+                Express.js
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-leaf"></i>
+                MongoDB
+              </div>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                Git
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-paper-plane"></i>
+                Postman
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code"></i>
+                VS Code
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-globe"></i>
+                Netlify
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-bolt"></i>
+                Vite
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Experience</h2>
+          <p>My professional journey and key contributions</p>
+        </div>
+        <div class="experience-card fade-in">
+          <div class="experience-header">
+            <div>
+              <div class="experience-title">Front-End Developer Intern</div>
+              <div class="experience-company">DesiQnA</div>
+            </div>
+            <div class="experience-duration">Nov 2024 - Apr 2025 | Remote</div>
+          </div>
+          <ul class="experience-achievements">
+            <li>
+              Built dynamic, responsive web applications with React, Tailwind
+              CSS, and Material UI, improving user engagement by 25% for
+              enterprise projects
+            </li>
+            <li>
+              Collaborated with design teams to implement complex UI/UX designs,
+              ensuring pixel-perfect, user-centric interfaces
+            </li>
+            <li>
+              Developed RESTful APIs for CRUD operations and real-time data
+              synchronization
+            </li>
+            <li>
+              Optimized application performance through React life cycle methods
+              and code-splitting, reducing load times by 15%
+            </li>
+            <li>
+              Contributed to Agile sprints, collaborating with cross-functional
+              teams to meet project deadlines
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Featured Projects</h2>
+          <p>Some of my recent work and personal projects</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card fade-in">
+            <div class="project-image">
+              <img src="assets\thinkboard.png" alt="Thinkboard" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Thinkboard - MERN Stack Notes App</h3>
+              <p class="project-description">
+                A comprehensive note-taking and management application built
+                with the MERN stack. Features complete CRUD functionality with
+                persistent MongoDB storage and a clean, responsive UI.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://mern-thinkboard-ddom.onrender.com/"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/MohammedAffaq/mern-thinkboard"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <div class="project-image">
+              <img src="assets\passop.png" alt="" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PassOP - Password Manager</h3>
+              <p class="project-description">
+                A secure password management application with full CRUD
+                operations. Features masked password fields, one-click
+                credential copying, and toast notifications for enhanced user
+                experience.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://password-manager-aoiz.onrender.com/"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/MohammedAffaq/Password_Manager"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <div class="project-image">
+              <img src="assets\brainwave.png" alt="" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Brainwave - Modern Web Application</h3>
+              <p class="project-description">
+                A modern, responsive web application showcasing advanced UI/UX
+                designs. Built with dynamic animations, clean layouts, and
+                reusable components for optimal user engagement.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="brainwavein.netlify.app" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/MohammedAffaq/Brainwave"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Education & Achievements</h2>
+          <p>My academic background and key accomplishments</p>
+        </div>
+
+        <!-- Education -->
+        <h3
+          style="
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+          "
+        >
+          Education
+        </h3>
+        <div class="education-grid">
+          <div class="education-card fade-in">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Bachelor of Engineering (B.E.)</h3>
+            <p><strong>Electronics and Communication</strong></p>
+            <p>Sri Siddhartha Institute of Technology, Tumkur</p>
+            <p class="text-secondary">Dec 2020 - Dec 2024</p>
+          </div>
+          <div class="education-card fade-in">
+            <div class="education-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <h3>Pre University Course (PUC)</h3>
+            <p><strong>PCMB</strong></p>
+            <p>Government PU College, Chikmagalur</p>
+            <p class="text-secondary">May 2018 - Apr 2019</p>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <h3
+          style="
+            text-align: center;
+            margin: 3rem 0 2rem;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+          "
+        >
+          Academic Achievements
+        </h3>
+        <div class="education-grid">
+          <div class="achievement-card fade-in">
+            <div class="achievement-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h3>Research Publication</h3>
+            <p>
+              Published a paper in International Conference on Recent Challenges
+              in Engineering and Technology (ICRCET-2024)
+            </p>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>National Competition</h3>
+            <p>
+              Participated in the National Level Project Exhibition and
+              Competition "Technodea 2023"
+            </p>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Quiz Champion</h3>
+            <p>
+              Winner in quiz competition in the "Electro-tec 2022" event held in
+              SSIT
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Get In Touch</h2>
+          <p>Let's connect and discuss opportunities</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info fade-in">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>mohammedaffaq1431@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 8431764150</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bengaluru, Karnataka, India</span>
+            </div>
+            <br />
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always open to discussing new opportunities, interesting
+              projects, or just having a chat about technology and development.
+              Feel free to reach out!
+            </p>
+          </div>
+          <!-- Contact Form -->
+          <div class="contact-form fade-in">
+               <form id="contact-form">
+               <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required />
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width: 100%">
+      <i class="fas fa-paper-plane"></i>
+      Send Message
+    </button>
+  </form>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://github.com/mohammedaffaq"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohammed-affaq-192675232/"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/affaq____raza/"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:mohammedaffaq1431@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p>&copy; 2025 Mohammed Affaq. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "26ruCK2AFX8xNfJen",
+            });
+        })();
+    </script>
+  </body>
+</html>
