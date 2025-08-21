@@ -52,7 +52,7 @@ If you’d like to collaborate, discuss opportunities, or just say hello 👋, f
 
 ## 🌟 Live Demo
 
-🔗 [Visit My Portfolio](https://your-portfolio-link.netlify.app/)  
+🔗 [Visit My Portfolio](https://affaqportfolio.netlify.app/)  
 
 ---
 
